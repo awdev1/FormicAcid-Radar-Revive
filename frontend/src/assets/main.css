@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+p {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white
+}
+#map_canvas > div.leaflet-control-container > div.leaflet-bottom.leaflet-right > div, #map_canvas > div.leaflet-control-container > div.leaflet-top.leaflet-left > div {
+    display: none;
+}
+.leaflet-popup-tip-container, .leaflet-popup-close-button {
+    display: none;
+}
+.leaflet-popup-content-wrapper, .leaflet-popup-tip {
+    box-shadow: none !important;
+    background-color: transparent !important;
+    color: white !important;
+}
+* {
+    user-select: none !important;
+}
