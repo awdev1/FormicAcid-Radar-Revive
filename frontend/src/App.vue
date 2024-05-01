@@ -50,7 +50,9 @@
     </div>
     <div v-else class="noconn">
         <p>
-            Could Not Connect To OBS
+                       Could not connect to OBS. 
+                       Check your OBS Websocket Settings 
+                       or install node and Python from the redist folder
         </p>
     </div>
 </template>
