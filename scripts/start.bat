@@ -6,5 +6,4 @@ cd ..
 cd frontend
 start /min cmd /c npm run dev
 cd ..
-python overlay.py
 exit
