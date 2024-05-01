@@ -5,7 +5,7 @@
 
 ## Usage
 
-Once installed and configured, you can use FormicAcid Radar Revive to track virtual aircraft, manage air traffic, and enhance your flight simulation experience.
+Once installed and configured, you can use this to track virtual aircraft, manage air traffic, and enhance your flight simulation experience.
 
 ## Contributing
 
