@@ -42,6 +42,7 @@ if %errorlevel% equ 0 (
     powershell -Command "(New-Object Net.WebClient).DownloadFile('https://nodejs.org/dist/v22.0.0/node-v22.0.0-x64.msi', 'node_installer.msi')"
     start "" /wait node_installer.msi /qn INSTALLDIR="C:\Nodejs"
     del node_installer.msi
+    PAUSE
 )
 
 REM Check for Python 3.10
@@ -58,6 +59,7 @@ if %errorlevel% equ 0 (
         echo Installing Python 3.10...
         start "" /wait python_installer.exe /quiet InstallAllUsers=1 TargetDir="C:\Python310" PrependPath=1
         del python_installer.exe
+        PAUSE
     )
 ) else (
     echo Python is not installed
@@ -67,6 +69,7 @@ if %errorlevel% equ 0 (
     echo Installing Python 3.10...
     start "" /wait python_installer.exe /quiet InstallAllUsers=1 TargetDir="C:\Python310" PrependPath=1
     del python_installer.exe
+    PAUSE
 )
 
 echo Both Node.js and Python 3.10 are now (hopefully) installed.
