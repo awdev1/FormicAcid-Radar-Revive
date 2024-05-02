@@ -61,7 +61,7 @@ if %errorlevel% equ 0 (
     )
 ) else (
     echo Python is not installed
-    echo Install Python 3.10 by running the installer, then click Yes on the UAC Prompt
+    echo Click Yes on the UAC Prompt
     echo Downloading Python installer...
     powershell -Command "(New-Object Net.WebClient).DownloadFile('https://www.python.org/ftp/python/3.10.0/python-3.10.0-amd64.exe', 'python_installer.exe')"
     echo Installing Python 3.10...
