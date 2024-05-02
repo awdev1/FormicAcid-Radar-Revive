@@ -2,7 +2,6 @@
 
 
 
-
 echo "___________                  .__          _____         .__    .___ __________             .___              .___                 __         .__  .__  "              
 echo "\_   _____/__________  _____ |__| ____   /  _  \   ____ |__| __| _/ \______   \_____     __| _/____ _______  |   | ____   _______/  |______  |  | |  |   ___________ "
 echo " |    __)/  _ \_  __ \/     \|  |/ ___\ /  /_\  \_/ ___\|  |/ __ |   |       _/\__  \   / __ |\__  \\_  __ \ |   |/    \ /  ___/\   __\__  \ |  | |  | _/ __ \_  __ \"
@@ -33,19 +32,20 @@ echo.
 echo.
 echo.
 echo.
-rem Check for Node.js
+REM Check for Node.js
 where node >nul 2>nul
 if %errorlevel% equ 0 (
     echo Node.js is installed
 ) else (
     echo Node.js is not installed
-    echo Installing Node.js. Click yes on the UAC Prompt
-    powershell Invoke-WebRequest https://nodejs.org/dist/v22.0.0/node-v22.0.0-x64.msi -O nodejs.msi
-    start nodejs.msi
+    echo Installing Node.js...
+    powershell -Command "(New-Object Net.WebClient).DownloadFile('https://nodejs.org/dist/v22.0.0/node-v22.0.0-x64.msi', 'node_installer.msi')"
+    start "" /wait node_installer.msi /qn INSTALLDIR="C:\Nodejs"
+    del node_installer.msi
     PAUSE
 )
 
-rem Check for Python 3.10
+REM Check for Python 3.10
 python --version >nul 2>nul
 if %errorlevel% equ 0 (
     python --version | findstr "3.10" >nul
@@ -54,21 +54,21 @@ if %errorlevel% equ 0 (
     ) else (
         echo Python 3.10 is not installed
         echo Click Yes on the UAC Prompt
-        cd _redist
-        powershell Invoke-WebRequest https://www.python.org/ftp/python/3.10.0/python-3.10.0-amd64.exe -O python310.exe
-        start python310.exe
-        echo You seem to need to install python twice. This time thru the microsoft store. Press any button to start the MS store and click install
-        start ms-windows-store://pdp/?ProductId=9ncvdn91xzqp
+        echo Downloading Python installer...
+        powershell -Command "(New-Object Net.WebClient).DownloadFile('https://www.python.org/ftp/python/3.10.0/python-3.10.0-amd64.exe', 'python_installer.exe')"
+        echo Installing Python 3.10...
+        start "" /wait python_installer.exe /quiet InstallAllUsers=1 TargetDir="C:\Python310" PrependPath=1
+        del python_installer.exe
         PAUSE
     )
 ) else (
     echo Python is not installed
-    echo Install Python 3.10 by running the installer, then click Yes on the UAC Prompt
-    powershell Invoke-WebRequest https://www.python.org/ftp/python/3.10.0/python-3.10.0-amd64.exe -O python310.exe
-    start python310.exe 
-    PAUSE
-    echo You seem to need to install python twice. This time thru the microsoft store. Press any button to start the MS store and click install
-    start ms-windows-store://pdp/?ProductId=9ncvdn91xzqp
+    echo Click Yes on the UAC Prompt
+    echo Downloading Python installer...
+    powershell -Command "(New-Object Net.WebClient).DownloadFile('https://www.python.org/ftp/python/3.10.0/python-3.10.0-amd64.exe', 'python_installer.exe')"
+    echo Installing Python 3.10...
+    start "" /wait python_installer.exe /quiet InstallAllUsers=1 TargetDir="C:\Python310" PrependPath=1
+    del python_installer.exe
     PAUSE
 )
 
