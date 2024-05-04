@@ -13,7 +13,8 @@ echo "     \/                    \/        \/        \/     \/        \/        
 rem Intro Screen
 echo ======================================================
 echo      Welcome to the FormicRadar Installer Script
-echo                Made by: awdev (reviewed by Beani and auto install by DangerChamp)
+echo          Made by: awdev (Reviewed by: Beani)
+echo             Auto install by DangerChamp
 echo ======================================================
 echo.
 echo IF YOU WOULD RATHER FOLLOW A VIDEO GO TO BEANI'S CHANNEL VIA THE LINK POSTED IN THE PTFS TOOLS Server
