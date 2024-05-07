@@ -6,7 +6,7 @@ if %errorlevel% neq 0 (
     powershell -Command "Start-Process \"%0\" -Verb RunAs"
     exit /b
 )
-
+whoami
 echo "___________                  .__          _____         .__    .___ "
 echo "\_   _____/__________  _____ |__| ____   /  _  \   ____ |__| __| _/ "
 echo   "|    __)/  _ \_  __ \/     \|  |/ ___\ /  /_\  \_/ ___\|  |/ __ |"
