@@ -6,7 +6,7 @@ if %errorlevel% neq 0 (
     powershell -Command "Start-Process \"%0\" -Verb RunAs"
     exit /b
 )
-whoami
+
 echo "___________                  .__          _____         .__    .___ "
 echo "\_   _____/__________  _____ |__| ____   /  _  \   ____ |__| __| _/ "
 echo   "|    __)/  _ \_  __ \/     \|  |/ ___\ /  /_\  \_/ ___\|  |/ __ |"
@@ -98,18 +98,25 @@ echo.
 echo "Open OBS, go to the top toolbar and click tools, scripts, Python Settings, and import this following file path:"
 echo "C:/Users/REPLACE THIS WITH YOUR WINDOWS USERNAME/AppData/Local/Programs/Python/Python310 (you will need to click the 'browse' button and insert the path thru the top large search bar)"
 PAUSE 
+echo .
 echo "Next click apply and go to Tools, Websocket Server Settings, Enable Websocket Server, set port to 4455, and Disable Authentication, Click apply and ur done with that part."
 PAUSE
+echo .
 echo "Next Open the Scenes folder by clicking any button. When this opens you will need to open the scenes folder in the radar folder. Then copy those json files to the obs scenes folder"
 PAUSE
+echo .
 start %UserProfile%\AppData\Roaming\obs-studio\basic\scenes
 PAUSE
+echo .
 echo "once done run init.bat in /(radarfolder)/scripts you should only need to run init once."
 PAUSE
+echo .
 echo "Now run start.bat in the same folder and open 'radar-control.exe' in the main radar folder here. Be sure to open obs if you closed it"
 PAUSE
+echo .
 echo "When you have opened radar control, go to obs and Click Scene Collect and select any airport. Restart radar control."
 PAUSE
+echo .
 echo "Congrats! You have installed Formic's Radar. Enjoy."
 PAUSE
 exit
