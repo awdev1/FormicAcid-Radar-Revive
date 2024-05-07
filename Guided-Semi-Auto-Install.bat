@@ -31,8 +31,8 @@ echo               " \/     \/            \/               \/ "
 rem Intro Screen
 echo ======================================================
 echo      Welcome to the FormicRadar Installer Script
-echo          Made by: awdev (Reviewed by: Beani)
-echo             Auto QuietInstall by DangerChamp
+echo         Made by: awdev (Reviewed by: beaniii_)
+echo        Auto QuietInstall and UAC by DangerChamp
 echo ======================================================
 echo.
 echo IF YOU WOULD RATHER FOLLOW A VIDEO GO TO BEANI'S CHANNEL VIA THE LINK POSTED IN THE PTFS TOOLS Server
@@ -73,23 +73,23 @@ if %errorlevel% equ 0 (
     ) else (
         echo Python 3.10 is not installed
         echo Downloading Python installer...
-        powershell -Command "(New-Object Net.WebClient).DownloadFile('https://www.python.org/ftp/python/3.10.0/python-3.10.0-amd64.exe', 'python_installer.exe')"
+        powershell -Command "(New-Object Net.WebClient).DownloadFile('https://www.python.org/ftp/python/3.10.0/python-3.10.0-amd64.exe', 'python_installer310.exe')"
         echo Installing Python 3.10...
         start "" /wait python_installer.exe /quiet InstallAllUsers=1 TargetDir="C:\Python310" PrependPath=1
-        del python_installer.exe
+        del python_installer310.exe
         PAUSE
     )
 ) else (
     echo Python is not installed
     echo Downloading Python installer...
-    powershell -Command "(New-Object Net.WebClient).DownloadFile('https://www.python.org/ftp/python/3.10.0/python-3.10.0-amd64.exe', 'python_installer.exe')"
+    powershell -Command "(New-Object Net.WebClient).DownloadFile('https://www.python.org/ftp/python/3.10.0/python-3.10.0-amd64.exe', 'python_installer310.exe')"
     echo Installing Python 3.10...
     start "" /wait python_installer.exe /quiet InstallAllUsers=1 TargetDir="C:\Python310" PrependPath=1
-    del python_installer.exe
+    del python_installer310.exe
     PAUSE
 )
 
-echo Both Node.js and Python 3.10 are now (hopefully) installed.
+echo Both Node.js and Python 3.10 are installed.
 echo.
 echo.
 echo.
