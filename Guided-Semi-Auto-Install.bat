@@ -1,8 +1,11 @@
 @echo off
 
-
-
-
+REM Check for admin rights
+net session >nul 2>nul
+if %errorlevel% neq 0 (
+    powershell -Command "Start-Process \"%0\" -Verb RunAs"
+    exit /b
+)
 
 echo "___________                  .__          _____         .__    .___ "
 echo "\_   _____/__________  _____ |__| ____   /  _  \   ____ |__| __| _/ "
@@ -69,7 +72,6 @@ if %errorlevel% equ 0 (
         echo Python 3.10 is installed
     ) else (
         echo Python 3.10 is not installed
-        echo Click Yes on the UAC Prompt
         echo Downloading Python installer...
         powershell -Command "(New-Object Net.WebClient).DownloadFile('https://www.python.org/ftp/python/3.10.0/python-3.10.0-amd64.exe', 'python_installer.exe')"
         echo Installing Python 3.10...
@@ -79,7 +81,6 @@ if %errorlevel% equ 0 (
     )
 ) else (
     echo Python is not installed
-    echo Click Yes on the UAC Prompt
     echo Downloading Python installer...
     powershell -Command "(New-Object Net.WebClient).DownloadFile('https://www.python.org/ftp/python/3.10.0/python-3.10.0-amd64.exe', 'python_installer.exe')"
     echo Installing Python 3.10...
