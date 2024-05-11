@@ -93,7 +93,7 @@ echo.
 echo.
 echo.
 echo "Open OBS, go to the top toolbar and click tools, scripts, Python Settings, and import this following file path:"
-echo "C:/Users/REPLACE THIS WITH YOUR WINDOWS USERNAME/AppData/Local/Programs/Python/Python310 (you will need to click the 'browse' button and insert the path thru the top large search bar)"
+echo "C:/Users/REPLACE THIS WITH YOUR WINDOWS USERNAME/AppData/Local/Programs/Python/Python310 (you will need to click the 'Browse' button and insert the path thru the top large search bar)"
 PAUSE 
 echo .
 echo "Next click apply and go to Tools, Websocket Server Settings, Enable Websocket Server, set port to 4455, and Disable Authentication, Click apply and ur done with that part."
