@@ -48,9 +48,6 @@ echo.
 echo.
 echo.
 echo.
-echo.
-echo.
-echo.
 REM Check for Node.js
 where node >nul 2>nul
 if %errorlevel% equ 0 (
