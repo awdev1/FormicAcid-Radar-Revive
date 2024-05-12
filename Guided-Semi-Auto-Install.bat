@@ -111,7 +111,7 @@ echo .
 echo "Now run start.bat in the same folder and open 'radar-control.exe' in the main radar folder here. Be sure to open obs if you closed it"
 PAUSE
 echo .
-echo "When you have opened radar control, go to obs and Click Scene Collect and select any airport. Restart radar control."
+echo "When you have opened radar control, go to obs and Click Scene Collection and select any airport. Restart radar control."
 PAUSE
 echo .
 echo "Congrats! You have installed Formic's Radar. Enjoy."
