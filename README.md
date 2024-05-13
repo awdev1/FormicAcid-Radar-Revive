@@ -20,7 +20,7 @@
 ## Installation 🔧
 
 1. Get the latest [release](<https://github.com/awdev1/FormicAcid-Radar-Revive/releases>)
-2. Unzip th folder to a suitable destination via 7zip, winRAR or file explorer.
+2. Unzip the folder to a suitable destination via 7zip, winRAR or file explorer.
 3. Run **Guided-Semi-Auto-Install.bat**
 4. Configure to your liking & enjoy! ⭐
 
