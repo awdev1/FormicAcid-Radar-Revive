@@ -39,7 +39,6 @@ root.attributes('-alpha', 0.002)
 root.attributes('-topmost', True)
 root.geometry("1920x1080+0+0")
 root.overrideredirect(True)
-root.iconbitmap("FormicRadarIcon.ico")
 
 top = Toplevel(root)
 top.attributes('-transparentcolor', transparent_color)

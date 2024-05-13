@@ -1,4 +1,4 @@
-# FormicRadar Revive 📡
+# FormicAcid Radar Revive 📡
 
 ![Project Banner](readme_banner.png?raw=true)
 
