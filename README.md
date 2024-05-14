@@ -32,7 +32,7 @@
 
 ## Support 💁
 
-For support or bug reports, open a [Github Issue](<https://github.com/awdev1/FormicAcid-Radar-Revive/issues>)
+For support or bug reports, open a [Github Issue](<https://github.com/awdev1/FormicAcid-Radar-Revive/issues>) or go to the [Discord](<https://discord.gg/g9wgbWSTxC>)
 
 ## License 🪪
 
