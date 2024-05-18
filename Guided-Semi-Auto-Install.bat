@@ -72,7 +72,7 @@ if %errorlevel% equ 0 (
         echo Downloading Python installer...
         powershell -Command "(New-Object Net.WebClient).DownloadFile('https://www.python.org/ftp/python/3.10.0/python-3.10.0-amd64.exe', 'python_installer310.exe')"
         echo Installing Python 3.10...
-        start "" /wait python_installer.exe /quiet InstallAllUsers=1 TargetDir="C:\Python310" PrependPath=1
+        start "" /wait python_installer310.exe /quiet InstallAllUsers=1 TargetDir="C:\Python310" PrependPath=1
         del python_installer310.exe
         PAUSE
     )
@@ -81,7 +81,7 @@ if %errorlevel% equ 0 (
     echo Downloading Python installer...
     powershell -Command "(New-Object Net.WebClient).DownloadFile('https://www.python.org/ftp/python/3.10.0/python-3.10.0-amd64.exe', 'python_installer310.exe')"
     echo Installing Python 3.10...
-    start "" /wait python_installer.exe /quiet InstallAllUsers=1 TargetDir="C:\Python310" PrependPath=1
+    start "" /wait python_installer310.exe /quiet InstallAllUsers=1 TargetDir="C:\Python310" PrependPath=1
     del python_installer310.exe
     PAUSE
 )
