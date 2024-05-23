@@ -53,7 +53,7 @@ exit /b
 :openytvideo
 rem Replace with actual youtube tutorial link once you have a video up again
 rem as vision closed his channel and the videos are unavailable lol
-start "" https://www.youtube.com/watch?v=xvFZjo5PgG0
+start "" https://www.youtube.com/watch?v=LYUFJBMxizM
 goto quit
 
 :setup
