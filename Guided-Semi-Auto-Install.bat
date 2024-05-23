@@ -27,7 +27,6 @@ echo       "|___|___|  /____  > |__| (____  /____/____/\___  >__| "
 echo               " \/     \/            \/               \/ "            
 
 
-
 rem Intro Screen
 echo ======================================================
 echo      Welcome to the FormicRadar Installer Script
@@ -35,7 +34,29 @@ echo         Made by: awdev (Reviewed by: beaniii_)
 echo        Auto QuietInstall and UAC by DangerChamp
 echo ======================================================
 echo.
-echo IF YOU WOULD RATHER FOLLOW A VIDEO GO TO BEANI'S CHANNEL VIA THE LINK POSTED IN THE PTFS TOOLS Server
+
+:mainmenu
+echo.........................................................
+echo:                      Option Menu                      :
+echo:.......................................................:
+echo: 1. Open YouTube Tutorial                              :
+echo: 2. Continue With Integrated Step-by-Step installation :
+echo:.......................................................:
+choice /C:12 >nul
+
+if %errorlevel% equ 1 goto openytvideo
+if %errorlevel% equ 2 goto setup
+
+:quit
+exit /b
+
+:openytvideo
+rem Replace with actual youtube tutorial link once you have a video up again
+rem as vision closed his channel and the videos are unavailable lol
+start "" https://www.youtube.com/watch?v=xvFZjo5PgG0
+goto quit
+
+:setup
 echo.
 echo.
 echo.
