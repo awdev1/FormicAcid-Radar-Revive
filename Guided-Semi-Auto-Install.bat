@@ -30,7 +30,7 @@ echo               " \/     \/            \/               \/ "
 rem Intro Screen
 echo ======================================================
 echo      Welcome to the FormicRadar Installer Script
-echo         Made by: awdev (Reviewed by: beaniii_)
+echo                     Made by: awdev
 echo        Auto QuietInstall and UAC by DangerChamp
 echo ======================================================
 echo.
