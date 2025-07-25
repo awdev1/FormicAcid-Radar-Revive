@@ -1,6 +1,6 @@
 # FormicAcid Radar Revive 📡
 
-## IMPORTANT NOTICE: This tool is discontinued due to Rockford Map Changes.
+## IMPORTANT NOTICE: This tool is discontinued due to Rockford Map Changes. Use [24Scope](https://zedruc.net/24scope/) or the upcoming FormicScope.
 
 ![Project Banner](readme_banner.png?raw=true)
 
